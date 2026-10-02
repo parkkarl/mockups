@@ -1,0 +1,33 @@
+.app{color-scheme:dark;--bg:#111111;--surface:#1c1c1c;--panel:#161616;--hover:#303030;--border:#393939;--text:#eeeeee;--muted:#aaaaaa;--accent:#f1f1f1;--accent-bg:#353535;--accent-border:#727272;--canvas-around:#101010;--input:#262626;--shadow:#000000aa;color:var(--text);background:var(--bg)}
+.app[data-theme=light]{color-scheme:light;--bg:#f3f3f3;--surface:#ffffff;--panel:#f8f8f8;--hover:#ededed;--border:#d5d5d5;--text:#202020;--muted:#666666;--accent:#222222;--accent-bg:#e4e4e4;--accent-border:#a1a1a1;--canvas-around:#ececec;--input:#ffffff;--shadow:#00000022}
+.app .workspace,.app .sidebar,.app .page-tree,.app .terminal-panel,.app .panel-divider{background:var(--panel)}
+.app .toolbar,.app .workspace-footer,.app .tree-heading,.app .tree-footer{background:var(--surface);border-color:var(--border)}
+.app .toolbar{border-top:0}
+.app .sidebar,.app .page-tree,.app .sidebar.collapsed{border-color:var(--border)}
+.app .canvas-frame{background:var(--canvas-around)}
+.app .canvas-scroll,.app .tree-rows{scrollbar-color:var(--border) var(--panel)}
+.app .canvas-sheet{box-shadow:0 8px 32px var(--shadow)}
+.app .tool-button,.app .auto-shapes,.app .size-control,.app .selection-size,.app .panel-toggle,.app .terminal-restore,.app .page-tree,.app .save-status,.app .workspace-footer{color:var(--muted)}
+.app .tool-button:hover:not(:disabled),.app .auto-shapes:hover,.app .panel-toggle:hover,.app .terminal-restore:hover,.app .page-row:hover,.app .tree-heading button:hover,.app .page-actions button:hover,.app .tree-chevron:hover:not(:disabled){background:var(--hover);color:var(--text)}
+.app .tool-button.active,.app .tool-button.theme-toggle,.app .auto-shapes.enabled,.app .page-row.current{background:var(--accent-bg);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent-border)}
+.app .tool-button.locked-button{color:#bb8737;background:#6e4e1822;box-shadow:inset 0 0 0 1px #bb873780}
+.app .auto-shapes.enabled{border-color:var(--accent-border)}
+.app .saved-indicator{background:var(--accent);box-shadow:none}
+.app .tool-divider,.app .tree-footer{border-color:var(--border)}.app .tool-divider{background:var(--border)}
+.app .size-dot{background:var(--accent)}.app .size-control input{accent-color:var(--accent)}
+.app .selection-size input,.app .page-name input{background:var(--input);color:var(--text);border:1px solid var(--accent-border)}
+.app .panel-divider::before{background:var(--border)}.app .panel-divider:hover::before,.app .panel-divider:focus-visible::before,.app .panel-divider:active::before,.app .panel-divider span,.app .panel-divider:hover span,.app .panel-divider:focus-visible span{background:var(--accent-border)}
+.app .terminal-collapse{background:var(--panel)}
+.app .page-row{color:var(--muted)}.app .page-row.current{color:var(--accent)}
+.app .page-name svg,.app .tree-project,.app .tree-project span,.app .tree-footer{color:var(--muted)}
+.app .page-row.current .page-name svg,.app .tree-heading,.app .tree-project svg,.app .tree-footer svg,.app .page-tree.minimized .tree-heading button,.app .terminal-restore{color:var(--accent)}
+.app .page-actions,.app .page-row.current .page-actions{background:var(--hover)}
+.app .tree-new{border-color:var(--accent-border)!important;color:var(--accent)!important}.app .tree-new:hover{background:var(--hover)}
+.app .template-trigger{background:var(--accent-bg);border-color:var(--accent-border);color:var(--accent)}
+.app .template-trigger:hover,.app .template-trigger.open{background:var(--hover);color:var(--text)}
+.app .template-menu{background:var(--surface);border-color:var(--border);color:var(--text);box-shadow:0 16px 35px var(--shadow)}
+.app .template-menu-heading,.app .template-option-icon{color:var(--accent)}
+.app .template-section{border-color:var(--border)}.app .template-option-icon{border-color:var(--accent-border);background:var(--accent-bg)}
+.app .template-menu button:hover,.app .template-menu button:focus-visible{background:var(--hover)}.app .template-menu small{color:var(--muted)}
+.app .canvas-text-editor{background:var(--surface);border-color:var(--accent-border);box-shadow:0 6px 22px var(--shadow)}.app .canvas-text-editor::placeholder,.app .canvas-corner{color:var(--muted)}
+.app .swatch.chosen{outline-color:var(--swatch)}
